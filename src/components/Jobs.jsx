@@ -63,7 +63,7 @@ export default function Jobs() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Job title, keyword..."
-            className="flex-1 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
+            className="flex-1 rounded-lg px-4 py-2.5 text-sm bg-white/10 border border-white/20 text-white placeholder:text-blue-200 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white/20"
           />
           <button
             type="submit"
