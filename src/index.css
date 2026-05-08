@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* FlexJobs-inspired green palette */
+  --color-brand-50:  #edfbf4;
+  --color-brand-100: #d0f5e4;
+  --color-brand-200: #a4eacc;
+  --color-brand-300: #6dd8ae;
+  --color-brand-400: #35bf8e;
+  --color-brand-500: #1aa474;
+  --color-brand-600: #12875e;
+  --color-brand-700: #0e6c4a;
+  --color-brand-800: #0b5439;
+  --color-brand-900: #083f2c;
+
+  /* Navy for header/footer */
+  --color-navy-700: #1d2e45;
+  --color-navy-800: #162234;
+  --color-navy-900: #0e1b29;
+
+  /* Orange accent */
+  --color-accent:       #f05a28;
+  --color-accent-light: #fef3ee;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@layer utilities {
+  .animate-fade-in { animation: fade-in 0.2s ease-out; }
+}
+
+@layer base {
+  body {
+    background-color: #f8faf9;
+    color: #1a2e24;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
